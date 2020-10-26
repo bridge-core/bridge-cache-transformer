@@ -1,6 +1,6 @@
 # bridge-cache-transformer
 
-Transform a project with [bridge.'s](https://bridge-core.github.io/) cache to a project that can be used with [bridge-compiler](https://github.com/bridge-core/compiler)
+Transform a project with [bridge.'s](https://bridge-core.github.io/) cache to a project that can be used with [bridge-compiler](https://github.com/bridge-core/compiler). Custom syntax such as custom components will continue working as expected given that you have the compiler setup correctly.
 
 ## Usage
 
