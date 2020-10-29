@@ -1,4 +1,4 @@
-import { join } from 'https://deno.land/std@0.74.0/path/mod.ts'
+import { join, SEP } from 'https://deno.land/std@0.74.0/path/mod.ts'
 import { transform } from './transform.ts'
 
 export async function iterateDir(
@@ -19,6 +19,11 @@ export async function iterateDir(
 			)
 			continue
 		}
+
+		// Handling cache files (potentially for cooperative omega cache)
+		// if(fromFolder.includes(`bridge${SEP}cache`)) {
+
+		// }
 
 		// File
 		try {
